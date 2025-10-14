@@ -1,0 +1,15 @@
+@media screen and (min-width:768px) and (max-width: 1023px) {
+body {
+    background-color: aqua;
+}
+}
+@media screen and (min-width:767px) {
+body {
+    background-color: yellow;
+}
+}
+@media print {
+    body {
+        background-color: white;
+    }
+}
