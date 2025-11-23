@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>가위바위보</title>
+</head>
+<body>
+
+<h2>숫자를 입력하세요 (1: 가위, 2: 바위, 3: 보)</h2>
+
+<input type="text" id="userInput">
+<button onclick="showResult()">결과 보기</button>
+
+<p id="result"></p>
+
+<script>
+// 함수: 입력값을 읽고 결과 출력
+function showResult() {
+  var num = document.getElementById("userInput").value; // 문자열 입력
+  var choice = ""; // 결과 저장 변수
+
+  // 조건문
+  if (num == 1) {
+    choice = "가위";
+  } else if (num == 2) {
+    choice = "바위";
+  } else if (num == 3) {
+    choice = "보";
+  } else {
+    choice = "1, 2, 3 중에서 입력하세요.";
+  }
+
+  // 화면에 출력
+  document.getElementById("result").innerHTML = choice;
+}
+</script>
+
+</body>
+</html>
